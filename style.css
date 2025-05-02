@@ -1,0 +1,144 @@
+
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark default background */
+body {
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container for the app */
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #1e1e1e; /* Slightly lighter than body */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+/* Header title */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Task input section */
+.input-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Input field */
+input[type="text"], select {
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50; /* Green */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Task list */
+ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+/* Each task */
+li {
+    background-color: #2c2c2c;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Priority colors */
+.low-priority {
+    border-left: 5px solid #4caf50; /* Green */
+}
+.medium-priority {
+    border-left: 5px solid #ffeb3b; /* Yellow */
+}
+.high-priority {
+    border-left: 5px solid #f44336; /* Red */
+}
+
+/* Star button */
+.starring-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.starring-btn.starred {
+    color: gold;
+}
+
+.starring-btn.not-starred {
+    color: gray;
+}
+
+/* Delete button */
+.delete-btn {
+    background-color: #f44336;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Quote box */
+#quote-box {
+    text-align: center;
+    margin-top: 20px;
+    font-style: italic;
+    color: #cccccc;
+}
+
+/* Toggle button */
+#toggle-theme {
+    background-color: #2196f3;
+}
+
+#toggle-theme:hover {
+    background-color: #1976d2;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
